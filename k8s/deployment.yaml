@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resume
+  labels:
+    app.kubernetes.io/name: resume
+spec:
+  strategy:
+    type: RollingUpdate
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: resume
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: resume
+    spec:
+      containers:
+      # - env:
+      #   name: env
+      #     value: dev
+      - name: resume-container
+        imagePullPolicy: Always
+        image: lauming1111/resume:resume-backend
+        ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP
+      imagePullSecrets:
+        - name: dockerhub-secret
+
+
+
+
+# docker tag resume-backend:latest lauming1111/resume:resume-backend
+# docker push lauming1111/resume:resume-backend
