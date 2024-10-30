@@ -17,4 +17,6 @@ jobs:
     - name: Build the Docker image
       run: |
         pwd
-        docker build . --file resume/Dockerfile --tag resume-backend:latest
+        cd resume
+        docker build . --file Dockerfile --tag resume-backend:latest
+        docker image ls
