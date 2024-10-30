@@ -87,7 +87,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          test for github action
+          test for github action v2
         </a>
       </footer>
     </div>
