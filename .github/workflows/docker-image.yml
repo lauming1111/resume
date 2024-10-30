@@ -23,4 +23,5 @@ jobs:
     - name: Publish the Docker image
       run: |
         docker image ls
+        docker login -u lauming1111 -p ${{ secrets.DOCKERHUB_PASSWORD }}
         docker push resume-backend:latest
