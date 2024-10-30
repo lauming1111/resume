@@ -20,3 +20,7 @@ jobs:
         cd resume
         docker build . --file Dockerfile --tag resume-backend:latest
         docker image ls
+    - name: Publish the Docker image
+      run: |
+        docker image ls
+        docker push resume-backend:latest
