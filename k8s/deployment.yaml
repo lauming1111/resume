@@ -39,8 +39,9 @@ spec:
 
 
 
-
+# minikube start --listen-address='0.0.0.0'
 # docker tag resume-backend:latest lauming1111/resume:resume-backend
 # docker push lauming1111/resume:resume-backend
 # kubectl apply -f k8s/deployment.yaml
 # kubectl rollout restart deployment resume
+# kubectl port-forward deployment/resume 3001:3000 --address 0.0.0.0
