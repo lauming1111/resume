@@ -27,6 +27,13 @@ spec:
         - containerPort: 3000
           name: http
           protocol: TCP
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          timeoutSeconds: 5
       imagePullSecrets:
         - name: dockerhub-secret
 
@@ -35,3 +42,5 @@ spec:
 
 # docker tag resume-backend:latest lauming1111/resume:resume-backend
 # docker push lauming1111/resume:resume-backend
+# kubectl apply -f k8s/deployment.yaml
+# kubectl rollout restart deployment resume
