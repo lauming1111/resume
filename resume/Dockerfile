@@ -11,6 +11,7 @@ RUN npm -v
 
 COPY . .
 RUN npm install
+RUN npm run build
 # ENTRYPOINT node -v
 
 CMD ["npm", "run", "start"]
