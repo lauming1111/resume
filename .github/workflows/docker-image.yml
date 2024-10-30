@@ -18,10 +18,10 @@ jobs:
       run: |
         pwd
         cd resume
-        docker build . --file Dockerfile --tag resume-backend:latest
+        docker build . --file Dockerfile --tag lauming1111/resume:resume-backend
         docker image ls
     - name: Publish the Docker image
       run: |
         docker image ls
         docker login -u lauming1111 -p ${{ secrets.DOCKERHUB_PASSWORD }} docker.io
-        docker push resume-backend:latest
+        docker push lauming1111/resume:resume-backend
