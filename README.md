@@ -1,3 +1,3 @@
 # resume
 
-Using GitHub HTML Hosting
+Using GitHub Action to deploy free static web hosting
