@@ -3,92 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ming Lau - CV</title>
+    <title>Ming Lau Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #f4f4f4;
+            line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
+        h1 {
+            font-size: 28px;
             color: #333;
+            margin-bottom: 5px;
         }
-        p, li {
+        h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            font-size: 18px;
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin: 5px 0;
             color: #555;
         }
-        .section {
-            margin-bottom: 20px;
+        ul {
+            margin: 10px 0 10px 20px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+        ul ul {
+            margin: 5px 0 5px 20px;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            font-size: 16px;
+            color: #666;
+        }
+        .section-content {
+            margin-left: 10px;
+        }
+        /* Back to Top Button Styles */
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s ease;
+        }
+        #back-to-top:hover {
+            background-color: #34495e;
+            opacity: 0.9;
+        }
+        /* Download CV Button Styles */
+        #download-cv {
+            display: block;
+            margin: 30px auto 0;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Ensure no underline as a link */
+        }
+        #download-cv:hover {
+            background-color: #3498db;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Ming Lau</h1>
-        <p>Email: minglau0315@gmail.com | <a href="https://www.linkedin.com/in/ming-l-865014159">LinkedIn</a> | Phone: 4378188515</p>
-        
-        <div class="section">
-            <h2>Summary</h2>
-            <p>Cloud Engineer with a strong programming background and hands-on experience in TypeScript, Python, and Infrastructure as Code (IaC) management across AWS, Azure, and Alibaba Cloud. Skilled in building automated, scalable cloud solutions, I have designed high-availability infrastructures, implemented robust disaster recovery processes, and optimized costs with FinOps strategies. My work has spanned web backend, mobile, and Cloud Platforms, making me well-versed in delivering comprehensive, resilient, and cost-effective cloud architectures.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Work Experience</h2>
-            <h3>Cloud & Platform Engineer - Cathay Pacific Airways Limited (Dec 2021 - Aug 2024)</h3>
-            <ul>
-                <li>Designed and managed cloud infrastructure using AWS and Azure to ensure high availability, scalability, and cost-efficiency.</li>
-                <li>Utilized Infrastructure as Code tools like AWS CDK, Terraform CDK, and Pulumi for provisioning and managing cloud resources (Networks, Virtual Machines, Storage, and Databases).</li>
-                <li>Applied default configurations for security groups, network subnets, and DNS settings, reducing deployment time and minimizing configuration errors.</li>
-                <li>Implemented role-based access control following least-privilege permissions to enhance security.</li>
-                <li>Developed disaster recovery processes using CDK and Git (GitLab Terraform State) to enable quick system recovery across regions.</li>
-                <li>Implemented a custom script to safeguard systems with backups and spare nodes, ensuring recovery within defined RTO and RPO.</li>
-                <li>Integrated AWS Systems Manager for automated OS patching and security compliance.</li>
-                <li>Developed serverless applications using AWS Lambda, API Gateway, DynamoDB, and Step Functions to streamline data processing workflows.</li>
-                <li>Created automated failover scripts (Python/NodeJS) and integrated alerting systems using AWS SNS, AWS SES, and Microsoft Power Automate.</li>
-            </ul>
-            
-            <h3>Software Developer - C&R Wise AI (Aug 2018 - Dec 2021)</h3>
-            <ul>
-                <li>Developed and optimized AI model training infrastructure using Docker, Kubernetes, and GPU-based instances.</li>
-                <li>Implemented CI/CD pipelines for seamless AI model deployment.</li>
-                <li>Configured Linux environments, handling SSH automation and log management.</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Bachelor of Science in Computing</strong> - Coventry University</p>
-        </div>
-        
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>AWS Certified Cloud Practitioner</li>
-                <li>AWS Certified Solutions Architect – Associate</li>
-                <li>AWS Certified Developer – Associate</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Cloud Platforms:</strong> AWS, Azure, Alibaba Cloud</li>
-                <li><strong>Infrastructure as Code:</strong> AWS CDK, Terraform CDK, Pulumi</li>
-                <li><strong>DevOps & Automation:</strong> Docker, Kubernetes, GitHub Actions, Jenkins</li>
-                <li><strong>Programming:</strong> TypeScript, JavaScript, Python, Node.js</li>
-                <li><strong>Security & Compliance:</strong> AWS IAM, Secrets Manager, FinOps</li>
-                <li><strong>Monitoring & Logging:</strong> AWS CloudWatch, Prometheus, Grafana</li>
-                <li><strong>Productivity Tools:</strong> Jira, Confluence, Agile, ITIL</li>
-            </ul>
-        </div>
+    <h1>Ming Lau</h1>
+    <p class="contact-info">
+        <a href="mailto:minglau0315@gmail.com">minglau0315@gmail.com</a> | 
+        <a href="https://www.linkedin.com/in/ming-I-865014159">LinkedIn</a> | 
+        4378188515
+    </p>
+
+    <h2>SUMMARY</h2>
+    <p class="section-content">
+        Cloud Engineer with a strong programming background and hands-on experience in TypeScript, Python, and Infrastructure as Code (IaC) management across AWS, Azure, and Alibaba Cloud. Skilled in building automated, scalable cloud solutions, I have designed high-availability infrastructures, implemented robust disaster recovery processes, and optimized costs with FinOps strategies. My work has spanned web backend, mobile, and Cloud Platforms, making me well-versed in delivering comprehensive, resilient, and cost-effective cloud architectures.
+    </p>
+
+    <h2>WORK EXPERIENCE</h2>
+    <div class="section-content">
+        <h3>Cloud & Platform Engineer</h3>
+        <p><strong>December 2021 - August 2024</strong><br>Cathay Pacific Airways Limited</p>
+        <ul>
+            <li><strong>Infrastructure Development and Management</strong>
+                <ul>
+                    <li>Designed and managed cloud infrastructure using AWS and Azure to ensure high availability, scalability and cost-efficiency and fulfill the company compliance requirements</li>
+                    <li>Utilized Infrastructure as Code tools like AWS CDK, Terraform CDK and Pulumi for provisioning and managing cloud resources (Networks, Virtual Machines, Storages and Databases)</li>
+                    <li>Applied default configurations for security groups, network subnets, and DNS settings, reducing deployment time and minimizing configuration errors, including missing tags, naming conventions, and incorrect CIDR assignments</li>
+                    <li>Deployed role-based access control for users and resources, following to least-privilege permissions to enhance security</li>
+                </ul>
+            </li>
+            <li><strong>Disaster Recovery and Automation</strong>
+                <ul>
+                    <li>Used CDK and Git (GitLab Terraform State) for disaster recovery to maintain high availability and ensure application resilience across regions</li>
+                    <li>The Infrastructure as Code (IaC) project supports dynamic regional configurations, enabling users to redeploy, duplicate or relocate applications across different regions, to reduce system recovery time</li>
+                    <li>Assigned default monitoring metrics or alarms for different provisioned resources, to prevent system outage</li>
+                    <li>Developed automated failover scripts (Python/NodeJS) and integrated notifications (AWS SNS, AWS SES, Microsoft Power Automate) to alert system owners for proactive measures</li>
+                    <li>Implemented a custom script to safeguard the system with backups and sparse nodes, ensuring recovery within the defined RTO and RPO</li>
+                    <li>Implemented automated OS patching with AWS Systems Manager to keep OS packages and kernel versions up-to-date</li>
+                    <li>Designed and developed serverless applications using AWS Lambda, AWS API Gateway, AWS DynamoDB and AWS Step Functions to streamline data processing workflows and increase system resilience</li>
+                    <li>Developed automated failover scripts (Python/NodeJS) and integrated notifications (AWS SNS, AWS SES, Microsoft Power Automate) to alert system owners for proactive measures, to ensure system reliability and quick recovery from failures</li>
+                </ul>
+            </li>
+            <li><strong>Security and Compliance</strong>
+                <ul>
+                    <li>Protect application secrets and API tokens by using the AWS Systems Manager Parameter store and AWS Secret Manager</li>
+                    <li>Managed Prisma Cloud Security Posture Management (CSPM) account and alerts, enhancing cloud security measures and compliance</li>
+                    <li>Integrated CSPM with Elasticsearch, Logstash and Kibana (ELK) to display trends and advocate for best practices in cloud</li>
+                </ul>
+            </li>
+            <li><strong>FinOps and Cost Optimization</strong>
+                <ul>
+                    <li><strong>Resource Tagging and Governance</strong>
+                        <ul>
+                            <li>Collaborated with the FinOps lead to implement a tagging governance framework via AWS Config, enabling automated scanning of cost usage across all AWS Organizational Units (OUs). This framework provides insights into resource allocation, tracks expenditure by resource type and enforces tagging policies to optimize usage</li>
+                        </ul>
+                    </li>
+                    <li><strong>Automated Start/Stop for Cost Control</strong>
+                        <ul>
+                            <li>Developed an automated tool using AWS Config and Lambda functions to manage resource start/stop schedules based on usage tags, resulting in significant cost savings by aligning operational times with demand across all OUs</li>
+                            <li>Promoted to all users and gathered feedback to enhance the process and the tagging policy</li>
+                        </ul>
+                    </li>
+                    <li><strong>Resource Rightsizing Notifications</strong>
+                        <ul>
+                            <li>Integrated custom notifications application to alert product owners of idle, high-cost resources, prompting timely review and potential rightsizing. This system adheres to Cathay Pacific's cost-efficiency standards, supporting proactive cost control by maintaining usage and budget alignment</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Projects:</strong> LAM2/LAM3 (Legacy Application Migration), AWS Resource Usage Explorer</li>
+        </ul>
+
+        <h3>Software Developer</h3>
+        <p><strong>August 2018 - December 2021</strong><br>C&R Wise AI</p>
+        <ul>
+            <li><strong>Docker Swarm for AI training</strong>
+                <ul>
+                    <li>Setup Docker Runtime with Docker Compose and Docker Swarm for AI models training (YOLO v3) on different Linux machines</li>
+                    <li>Configured Docker networks, volumes and managed YAML settings for monitoring, failover, rolling updates and auto-scaling</li>
+                </ul>
+            </li>
+            <li><strong>Linux Environment Management</strong>
+                <ul>
+                    <li>Configured SSH access for developers, managed system and application logs with Logrotate and automated data migrations with cron jobs and Rsync to optimize workflows</li>
+                </ul>
+            </li>
+            <li><strong>Projects:</strong> MTR - Train Seat Availability System, Protest Crowds Counter and Receipt Recognization for Henderson Land Development</li>
+        </ul>
     </div>
+
+    <h2>EDUCATION</h2>
+    <p class="section-content">
+        <strong>Coventry University</strong><br>Bachelor of Science in Computing
+    </p>
+
+    <h2>CERTIFICATION</h2>
+    <ul class="section-content">
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>AWS Certified Solutions Architect - Associate</li>
+        <li>AWS Certified Developer - Associate</li>
+    </ul>
+
+    <h2>SKILLS</h2>
+    <ul class="section-content">
+        <li><strong>Azure Cloud Platform:</strong> Azure DevOps, Virtual Network, Network Security Group, Subnet, Storage Account, Virtual Machine, Virtual Machine Monitoring, Virtual Machine Disk, Action Groups, Recovery Services Vault, Data Collection Rule and SDK/CLI</li>
+        <li><strong>AWS Cloud Platform:</strong> EC2, S3, ECS, ECR, ELK, SSM, CloudFormation, CDK, SES, SNS, SQS, StepFunction, Lambda Function, VPC, EBS, SDK/CLI, CloudWatch, EventBridge, RDS, Systems Manager, Secret Manager</li>
+        <li><strong>Google Cloud Platform:</strong> Compute Engine, Cloud Storage, Databases and SDK/CLI</li>
+        <li><strong>DevOps and Container Platform:</strong> Git, Docker, Docker Compose, Docker Swarm, Jenkins, GitHub Actions, Terraform CDK</li>
+        <li><strong>Linux Management:</strong> Bash/Shell script, Cron Expression, Logrotate, JQ, SSH, Rsync</li>
+        <li><strong>Programming Languages:</strong> Typescript, JavaScript, NodeJS, ReactJS, React Native, Python and Shell Script</li>
+        <li><strong>Infrastructure as Code (IaC):</strong> AWS CDK, Terraform CDK, Pulumi</li>
+        <li><strong>Productivity:</strong> Jira, Wrike, Confluence, Microsoft Teams, Slack, Agile, ITIL</li>
+    </ul>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">↑ Top</button>
+
+    <!-- Download CV Button (Static PDF Link) -->
+    <a href="./Ming Lau.pdf" id="download-cv" download="Ming Lau.pdf">Download CV</a>
+
+    <script>
+        // Back to Top Button Logic
+        const backToTopButton = document.getElementById('back-to-top');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+        backToTopButton.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
 </body>
 </html>
