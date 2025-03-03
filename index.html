@@ -59,7 +59,6 @@
         .section-content {
             margin-left: 10px;
         }
-        /* Back to Top Button Styles */
         #back-to-top {
             display: none;
             position: fixed;
@@ -80,7 +79,6 @@
             background-color: #34495e;
             opacity: 0.9;
         }
-        /* Download CV Button Styles */
         #download-cv {
             display: block;
             margin: 30px auto 0;
@@ -94,10 +92,14 @@
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease;
-            text-decoration: none; /* Ensure no underline as a link */
+            text-decoration: none;
         }
         #download-cv:hover {
             background-color: #3498db;
+        }
+        .nav-links {
+            margin-top: 10px;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -106,8 +108,12 @@
     <p class="contact-info">
         <a href="mailto:minglau0315@gmail.com">minglau0315@gmail.com</a> | 
         <a href="https://www.linkedin.com/in/ming-I-865014159">LinkedIn</a> | 
-        4378188515
+        <a href="https://lauming1111.github.io/resume/">My Portfolio</a> | 
+        437 818 8515
     </p>
+    <div class="nav-links">
+        <a href="./about_me.html">About Me</a>
+    </div>
 
     <h2>SUMMARY</h2>
     <p class="section-content">
@@ -211,14 +217,10 @@
         <li><strong>Productivity:</strong> Jira, Wrike, Confluence, Microsoft Teams, Slack, Agile, ITIL</li>
     </ul>
 
-    <!-- Back to Top Button -->
     <button id="back-to-top" title="Back to Top">↑ Top</button>
-
-    <!-- Download CV Button (Static PDF Link) -->
     <a href="./Ming Lau.pdf" id="download-cv" download="Ming Lau.pdf">Download CV</a>
 
     <script>
-        // Back to Top Button Logic
         const backToTopButton = document.getElementById('back-to-top');
         window.onscroll = function() {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {

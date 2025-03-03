@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ming Lau</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .nav-links {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .section-content {
+            margin-left: 10px;
+            margin-bottom: 15px; /* Added for spacing between paragraphs */
+        }
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s ease;
+        }
+        #back-to-top:hover {
+            background-color: #34495e;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    <div class="nav-links">
+        <a href="./index.html">Back to Resume</a>
+    </div>
+
+    <h2>My Passion</h2>
+    <p class="section-content">
+        I am deeply interested in engineering roles where I can apply my robust background in development and DevOps practices. With expertise in cloud platform provisioning tools across various providers, I am excited about contributing my diverse skill set to drive impactful outcomes for projects within esteemed organizations.
+    </p>
+
+    <h2>Cloud Development Expertise</h2>
+    <p class="section-content">
+        Throughout my career, I have demonstrated proficiency in cloud platform development, specializing in Infrastructure as Code (IaC) projects across AWS, Azure, and Alibaba Cloud. Leveraging tools such as CDK/CDKTF, I have designed scalable and resilient infrastructure solutions on both AWS and Azure platforms, ensuring seamless integration with existing workflows and applications.
+    </p>
+    <p class="section-content">
+        With over six years of dedicated experience in AWS Cloud Development, I have navigated the complexities of serverless architectures and managed services, including Lambda, Step Function, DynamoDB, SQS, EC2, and RDS. Additionally, my expertise in monitoring (utilizing CloudWatch Alarms and Metrics) and failover strategies has ensured optimal performance and reliability of deployed applications, even in challenging circumstances.
+    </p>
+
+    <h2>DevOps and Automation</h2>
+    <p class="section-content">
+        My experience extends to implementing continuous integration and delivery pipelines using Jenkins, streamlining deployment processes, and automating resource provisioning with CDK Stacks. These practices have enabled me to deliver high-quality solutions efficiently, meeting project objectives effectively while optimizing costs and facilitating easy redeployment or replication as needed.
+    </p>
+    <p class="section-content">
+        In addition to my strong background in cloud development, I possess a solid understanding of DevOps principles and practices. Integrating DevOps methodologies into development workflows, I have fostered collaboration between teams to accelerate the delivery of features and enhancements while maintaining a focus on quality and reliability. My Jenkins Pipelines are currently utilized by my team for blue/green deployment, cloud resource provisioning, and resource health monitoring/failover.
+    </p>
+
+    <h2>Development Skills</h2>
+    <p class="section-content">
+        Moreover, my development background in Typescript/Python equips me to create a variety of applications, including web and software solutions, further enhancing my ability to contribute to diverse projects.
+    </p>
+
+    <h2>Looking Forward</h2>
+    <p class="section-content">
+        Thank you for taking the time to learn more about me. I am eagerly looking forward to the possibility of contributing to innovative teams and further discussing how I can add significant value to your projects.
+    </p>
+
+    <button id="back-to-top" title="Back to Top">↑ Top</button>
+
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+        backToTopButton.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+</body>
+</html> 
