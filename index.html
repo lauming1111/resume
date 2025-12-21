@@ -188,11 +188,42 @@
         body.light-mode #theme-toggle-btn:hover {
             background-color: #34495e;
         }
+        .action-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 16px;
+            }
+            .action-bar {
+                margin-bottom: 12px;
+            }
+            #theme-toggle-btn,
+            #about-me-btn,
+            #download-resume {
+                position: static;
+                font-size: 14px;
+                padding: 8px 12px;
+                box-shadow: none;
+            }
+            #back-to-top {
+                width: 44px;
+                height: 44px;
+                bottom: 12px;
+                right: 12px;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle-btn">Light Mode</button>
+    <div class="action-bar">
+        <button id="theme-toggle-btn">Light Mode</button>
+        <a href="./about_me.html" id="about-me-btn">About Me</a>
+        <a href="./Ming Lau.pdf" id="download-resume" download="Ming Lau.pdf">Download My Resume</a>
+    </div>
 
     <h1>Ming Lau</h1>
     <p class="contact-info">
@@ -309,8 +340,6 @@
 
     <!-- Buttons -->
     <button id="back-to-top" title="Back to Top">↑ Top</button>
-    <a href="./about_me.html" id="about-me-btn">About Me</a>
-    <a href="./Ming Lau.pdf" id="download-resume" download="Ming Lau.pdf">Download My Resume</a>
 
     <script>
         const backToTopButton = document.getElementById('back-to-top');

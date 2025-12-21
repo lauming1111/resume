@@ -137,11 +137,40 @@
         body.light-mode #back-to-resume-btn:hover {
             background-color: #34495e;
         }
+        .action-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 16px;
+            }
+            .action-bar {
+                margin-bottom: 12px;
+            }
+            #theme-toggle-btn,
+            #back-to-resume-btn {
+                position: static;
+                font-size: 14px;
+                padding: 8px 12px;
+                box-shadow: none;
+            }
+            #back-to-top {
+                width: 44px;
+                height: 44px;
+                bottom: 12px;
+                right: 12px;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle-btn">Light Mode</button>
+    <div class="action-bar">
+        <button id="theme-toggle-btn">Light Mode</button>
+        <a href="./index.html" id="back-to-resume-btn">Back to Resume</a>
+    </div>
 
     <h1>About Me</h1>
     <div class="nav-links">
@@ -181,7 +210,6 @@
 
     <!-- Buttons -->
     <button id="back-to-top" title="Back to Top">↑ Top</button>
-    <a href="./index.html" id="back-to-resume-btn">Back to Resume</a>
 
     <script>
         const backToTopButton = document.getElementById('back-to-top');
