@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,86 +12,115 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
-            background-color: #1a1a1a; /* Dark mode default */
-            color: #e0e0e0; /* Dark mode default text */
+            background-color: #1a1a1a;
+            /* Dark mode default */
+            color: #e0e0e0;
+            /* Dark mode default text */
             transition: background-color 0.3s ease, color 0.3s ease;
         }
+
         body.light-mode {
             background-color: #fff;
             color: #333;
         }
+
         h1 {
             font-size: 28px;
-            color: #e0e0e0; /* Dark mode default */
+            color: #e0e0e0;
+            /* Dark mode default */
             margin-bottom: 5px;
         }
+
         body.light-mode h1 {
             color: #333;
         }
+
         h2 {
             font-size: 22px;
-            color: #a3bffa; /* Dark mode default */
+            color: #a3bffa;
+            /* Dark mode default */
             border-bottom: 2px solid #a3bffa;
             padding-bottom: 5px;
             margin-top: 30px;
         }
+
         body.light-mode h2 {
             color: #2c3e50;
             border-bottom: 2px solid #2c3e50;
         }
+
         h3 {
             font-size: 18px;
-            color: #bdc3c7; /* Dark mode default */
+            color: #bdc3c7;
+            /* Dark mode default */
             margin-top: 20px;
             margin-bottom: 5px;
         }
+
         body.light-mode h3 {
             color: #34495e;
         }
+
         p {
             margin: 5px 0;
-            color: #d0d0d0; /* Dark mode default */
+            color: #d0d0d0;
+            /* Dark mode default */
         }
+
         body.light-mode p {
             color: #555;
         }
+
         ul {
             margin: 10px 0 10px 20px;
             padding-left: 20px;
         }
+
         li {
             margin-bottom: 8px;
-            color: #d0d0d0; /* Dark mode default */
+            color: #d0d0d0;
+            /* Dark mode default */
         }
+
         body.light-mode li {
             color: #444;
         }
+
         a {
-            color: #81ecec; /* Dark mode default */
+            color: #81ecec;
+            /* Dark mode default */
             text-decoration: none;
         }
+
         body.light-mode a {
             color: #2980b9;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .contact-info {
             font-size: 16px;
-            color: #b0b0b0; /* Dark mode default */
+            color: #b0b0b0;
+            /* Dark mode default */
         }
+
         body.light-mode .contact-info {
             color: #666;
         }
+
         .section-content {
             margin-left: 10px;
         }
+
         #back-to-top {
             display: none;
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #4a5568; /* Dark mode default */
+            background-color: #4a5568;
+            /* Dark mode default */
             color: white;
             border: none;
             border-radius: 50%;
@@ -101,114 +131,113 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: opacity 0.3s ease, background-color 0.3s ease;
         }
+
         #back-to-top:hover {
             background-color: #718096;
             opacity: 0.9;
         }
+
         body.light-mode #back-to-top {
             background-color: #2c3e50;
         }
+
         body.light-mode #back-to-top:hover {
             background-color: #34495e;
         }
-        #download-resume {
-            position: fixed;
-            top: 70px; /* Below About Me button */
-            right: 20px; /* Fixed to match your latest request */
-            padding: 10px 20px;
-            background-color: #2d3748; /* Dark mode default */
+
+        .action-button {
+            padding: 8px 16px;
+            background-color: #4a5568;
+            /* Dark mode default */
             color: white;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
             text-decoration: none;
+            display: inline-flex;
+            align-items: center;
         }
-        #download-resume:hover {
+
+        .action-button:hover {
+            background-color: #718096;
+            opacity: 0.9;
+        }
+
+        body.light-mode .action-button {
+            background-color: #2c3e50;
+        }
+
+        body.light-mode .action-button:hover {
+            background-color: #34495e;
+        }
+
+        .download-btn {
+            background-color: #2d3748;
+        }
+
+        .download-btn:hover {
             background-color: #4a5568;
         }
-        body.light-mode #download-resume {
+
+        body.light-mode .download-btn {
             background-color: #2980b9;
         }
-        body.light-mode #download-resume:hover {
+
+        body.light-mode .download-btn:hover {
             background-color: #3498db;
         }
+
         .nav-links {
             margin-top: 10px;
             font-size: 16px;
         }
-        #about-me-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 8px 16px;
-            background-color: #4a5568; /* Dark mode default */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: opacity 0.3s ease, background-color 0.3s ease;
-            text-decoration: none;
-        }
-        #about-me-btn:hover {
-            background-color: #718096;
-            opacity: 0.9;
-        }
-        body.light-mode #about-me-btn {
-            background-color: #2c3e50;
-        }
-        body.light-mode #about-me-btn:hover {
-            background-color: #34495e;
-        }
-        #theme-toggle-btn {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            padding: 8px 16px;
-            background-color: #4a5568; /* Dark mode default */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-        }
-        #theme-toggle-btn:hover {
-            background-color: #718096;
-        }
-        body.light-mode #theme-toggle-btn {
-            background-color: #2c3e50;
-        }
-        body.light-mode #theme-toggle-btn:hover {
-            background-color: #34495e;
-        }
+
+
         .action-bar {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            align-items: center;
+            z-index: 10;
         }
+
+        .action-bar-left {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .action-bar-right {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
         @media (max-width: 640px) {
             body {
                 padding: 16px;
             }
-            .action-bar {
+
+            .action-bar-left,
+            .action-bar-right {
                 margin-bottom: 12px;
-            }
-            #theme-toggle-btn,
-            #about-me-btn,
-            #download-resume {
                 position: static;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .action-button {
                 font-size: 14px;
                 padding: 8px 12px;
                 box-shadow: none;
             }
+
             #back-to-top {
                 width: 44px;
                 height: 44px;
@@ -218,17 +247,22 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="action-bar">
-        <button id="theme-toggle-btn">Light Mode</button>
-        <a href="./about_me.html" id="about-me-btn">About Me</a>
-        <a href="./Ming Lau.pdf" id="download-resume" download="Ming Lau.pdf">Download My Resume</a>
+    <div class="action-bar action-bar-left">
+        <button id="theme-toggle-btn" class="action-button">Light Mode</button>
+    </div>
+    <div class="action-bar action-bar-right">
+        <a href="./about_me.html" id="about-me-btn" class="action-button">About Me</a>
+        <a href="./Ming Lau.pdf" class="action-button download-btn" download="Ming Lau.pdf">Download My Resume</a>
+        <a href="./CL.pdf" class="action-button download-btn" download="CL.pdf">Download My Cover Letter</a>
+        <a href="./Ming Lau CN Main.pdf" class="action-button download-btn" download="Ming Lau CN Main.pdf">Download My Resume (Chinese version)</a>
     </div>
 
     <h1>Ming Lau</h1>
     <p class="contact-info">
-        <a href="mailto:minglau0315@gmail.com">minglau0315@gmail.com</a> | 
-        <a href="https://www.linkedin.com/in/ming-l-865014159/">LinkedIn</a> | 
+        <a href="mailto:minglau0315@gmail.com">minglau0315@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/ming-l-865014159/">LinkedIn</a> |
         <!-- <a href="https://lauming1111.github.io/resume/">My Portfolio</a> |  -->
         437 818 8515
     </p>
@@ -238,7 +272,12 @@
 
     <h2>SUMMARY</h2>
     <p class="section-content">
-        Cloud Engineer with a strong programming background and hands-on experience in TypeScript, Python, and Infrastructure as Code (IaC) management across AWS, Azure, and Alibaba Cloud. Skilled in building automated, scalable cloud solutions, I have designed high-availability infrastructures, implemented robust disaster recovery processes, and optimized costs with FinOps strategies. My work has spanned web backend, mobile, and Cloud Platforms, making me well-versed in delivering comprehensive, resilient, and cost-effective cloud architectures.
+        Cloud Engineer with a strong programming background and hands-on experience in TypeScript, Python, and
+        Infrastructure as Code (IaC) management across AWS, Azure, and Alibaba Cloud. Skilled in building automated,
+        scalable cloud solutions, I have designed high-availability infrastructures, implemented robust disaster
+        recovery processes, and optimized costs with FinOps strategies. My work has spanned web backend, mobile, and
+        Cloud Platforms, making me well-versed in delivering comprehensive, resilient, and cost-effective cloud
+        architectures.
     </p>
 
     <h2>WORK EXPERIENCE</h2>
@@ -248,47 +287,75 @@
         <ul>
             <li><strong>Infrastructure Development and Management</strong>
                 <ul>
-                    <li>Designed and managed cloud infrastructure using AWS and Azure to ensure high availability, scalability and cost-efficiency and fulfill the company compliance requirements</li>
-                    <li>Utilized Infrastructure as Code tools like AWS CDK, Terraform CDK and Pulumi for provisioning and managing cloud resources (Networks, Virtual Machines, Storages and Databases)</li>
-                    <li>Applied default configurations for security groups, network subnets, and DNS settings, reducing deployment time and minimizing configuration errors, including missing tags, naming conventions, and incorrect CIDR assignments</li>
-                    <li>Deployed role-based access control for users and resources, following to least-privilege permissions to enhance security</li>
+                    <li>Designed and managed cloud infrastructure using AWS and Azure to ensure high availability,
+                        scalability and cost-efficiency and fulfill the company compliance requirements</li>
+                    <li>Utilized Infrastructure as Code tools like AWS CDK, Terraform CDK and Pulumi for provisioning
+                        and managing cloud resources (Networks, Virtual Machines, Storages and Databases)</li>
+                    <li>Applied default configurations for security groups, network subnets, and DNS settings, reducing
+                        deployment time and minimizing configuration errors, including missing tags, naming conventions,
+                        and incorrect CIDR assignments</li>
+                    <li>Deployed role-based access control for users and resources, following to least-privilege
+                        permissions to enhance security</li>
                 </ul>
             </li>
             <li><strong>Disaster Recovery and Automation</strong>
                 <ul>
-                    <li>Used CDK and Git (GitLab Terraform State) for disaster recovery to maintain high availability and ensure application resilience across regions</li>
-                    <li>The Infrastructure as Code (IaC) project supports dynamic regional configurations, enabling users to redeploy, duplicate or relocate applications across different regions, to reduce system recovery time</li>
-                    <li>Assigned default monitoring metrics or alarms for different provisioned resources, to prevent system outage</li>
-                    <li>Developed automated failover scripts (Python/NodeJS) and integrated notifications (AWS SNS, AWS SES, Microsoft Power Automate) to alert system owners for proactive measures</li>
-                    <li>Implemented a custom script to safeguard the system with backups and sparse nodes, ensuring recovery within the defined RTO and RPO</li>
-                    <li>Implemented automated OS patching with AWS Systems Manager to keep OS packages and kernel versions up-to-date</li>
-                    <li>Designed and developed serverless applications using AWS Lambda, AWS API Gateway, AWS DynamoDB and AWS Step Functions to streamline data processing workflows and increase system resilience</li>
-                    <li>Developed automated failover scripts (Python/NodeJS) and integrated notifications (AWS SNS, AWS SES, Microsoft Power Automate) to alert system owners for proactive measures, to ensure system reliability and quick recovery from failures</li>
+                    <li>Used CDK and Git (GitLab Terraform State) for disaster recovery to maintain high availability
+                        and ensure application resilience across regions</li>
+                    <li>The Infrastructure as Code (IaC) project supports dynamic regional configurations, enabling
+                        users to redeploy, duplicate or relocate applications across different regions, to reduce system
+                        recovery time</li>
+                    <li>Assigned default monitoring metrics or alarms for different provisioned resources, to prevent
+                        system outage</li>
+                    <li>Developed automated failover scripts (Python/NodeJS) and integrated notifications (AWS SNS, AWS
+                        SES, Microsoft Power Automate) to alert system owners for proactive measures</li>
+                    <li>Implemented a custom script to safeguard the system with backups and sparse nodes, ensuring
+                        recovery within the defined RTO and RPO</li>
+                    <li>Implemented automated OS patching with AWS Systems Manager to keep OS packages and kernel
+                        versions up-to-date</li>
+                    <li>Designed and developed serverless applications using AWS Lambda, AWS API Gateway, AWS DynamoDB
+                        and AWS Step Functions to streamline data processing workflows and increase system resilience
+                    </li>
+                    <li>Developed automated failover scripts (Python/NodeJS) and integrated notifications (AWS SNS, AWS
+                        SES, Microsoft Power Automate) to alert system owners for proactive measures, to ensure system
+                        reliability and quick recovery from failures</li>
                 </ul>
             </li>
             <li><strong>Security and Compliance</strong>
                 <ul>
-                    <li>Protect application secrets and API tokens by using the AWS Systems Manager Parameter store and AWS Secret Manager</li>
-                    <li>Managed Prisma Cloud Security Posture Management (CSPM) account and alerts, enhancing cloud security measures and compliance</li>
-                    <li>Integrated CSPM with Elasticsearch, Logstash and Kibana (ELK) to display trends and advocate for best practices in cloud</li>
+                    <li>Protect application secrets and API tokens by using the AWS Systems Manager Parameter store and
+                        AWS Secret Manager</li>
+                    <li>Managed Prisma Cloud Security Posture Management (CSPM) account and alerts, enhancing cloud
+                        security measures and compliance</li>
+                    <li>Integrated CSPM with Elasticsearch, Logstash and Kibana (ELK) to display trends and advocate for
+                        best practices in cloud</li>
                 </ul>
             </li>
             <li><strong>FinOps and Cost Optimization</strong>
                 <ul>
                     <li><strong>Resource Tagging and Governance</strong>
                         <ul>
-                            <li>Collaborated with the FinOps lead to implement a tagging governance framework via AWS Config, enabling automated scanning of cost usage across all AWS Organizational Units (OUs). This framework provides insights into resource allocation, tracks expenditure by resource type and enforces tagging policies to optimize usage</li>
+                            <li>Collaborated with the FinOps lead to implement a tagging governance framework via AWS
+                                Config, enabling automated scanning of cost usage across all AWS Organizational Units
+                                (OUs). This framework provides insights into resource allocation, tracks expenditure by
+                                resource type and enforces tagging policies to optimize usage</li>
                         </ul>
                     </li>
                     <li><strong>Automated Start/Stop for Cost Control</strong>
                         <ul>
-                            <li>Developed an automated tool using AWS Config and Lambda functions to manage resource start/stop schedules based on usage tags, resulting in significant cost savings by aligning operational times with demand across all OUs</li>
-                            <li>Promoted to all users and gathered feedback to enhance the process and the tagging policy</li>
+                            <li>Developed an automated tool using AWS Config and Lambda functions to manage resource
+                                start/stop schedules based on usage tags, resulting in significant cost savings by
+                                aligning operational times with demand across all OUs</li>
+                            <li>Promoted to all users and gathered feedback to enhance the process and the tagging
+                                policy</li>
                         </ul>
                     </li>
                     <li><strong>Resource Rightsizing Notifications</strong>
                         <ul>
-                            <li>Integrated custom notifications application to alert product owners of idle, high-cost resources, prompting timely review and potential rightsizing. This system adheres to Cathay Pacific's cost-efficiency standards, supporting proactive cost control by maintaining usage and budget alignment</li>
+                            <li>Integrated custom notifications application to alert product owners of idle, high-cost
+                                resources, prompting timely review and potential rightsizing. This system adheres to
+                                Cathay Pacific's cost-efficiency standards, supporting proactive cost control by
+                                maintaining usage and budget alignment</li>
                         </ul>
                     </li>
                 </ul>
@@ -301,16 +368,20 @@
         <ul>
             <li><strong>Docker Swarm for AI training</strong>
                 <ul>
-                    <li>Setup Docker Runtime with Docker Compose and Docker Swarm for AI models training (YOLO v3) on different Linux machines</li>
-                    <li>Configured Docker networks, volumes and managed YAML settings for monitoring, failover, rolling updates and auto-scaling</li>
+                    <li>Setup Docker Runtime with Docker Compose and Docker Swarm for AI models training (YOLO v3) on
+                        different Linux machines</li>
+                    <li>Configured Docker networks, volumes and managed YAML settings for monitoring, failover, rolling
+                        updates and auto-scaling</li>
                 </ul>
             </li>
             <li><strong>Linux Environment Management</strong>
                 <ul>
-                    <li>Configured SSH access for developers, managed system and application logs with Logrotate and automated data migrations with cron jobs and Rsync to optimize workflows</li>
+                    <li>Configured SSH access for developers, managed system and application logs with Logrotate and
+                        automated data migrations with cron jobs and Rsync to optimize workflows</li>
                 </ul>
             </li>
-            <li><strong>Projects:</strong> Hong Kong Mass Transit Railway - Train Seat Availability System, Protest Crowds Counter and Receipt Recognization for Henderson Land Development</li>
+            <li><strong>Projects:</strong> Hong Kong Mass Transit Railway - Train Seat Availability System, Protest
+                Crowds Counter and Receipt Recognization for Henderson Land Development</li>
         </ul>
     </div>
 
@@ -328,12 +399,18 @@
 
     <h2>SKILLS</h2>
     <ul class="section-content">
-        <li><strong>Azure Cloud Platform:</strong> Azure DevOps, Virtual Network, Network Security Group, Subnet, Storage Account, Virtual Machine, Virtual Machine Monitoring, Virtual Machine Disk, Action Groups, Recovery Services Vault, Data Collection Rule and SDK/CLI</li>
-        <li><strong>AWS Cloud Platform:</strong> EC2, S3, ECS, ECR, ELK, SSM, CloudFormation, CDK, SES, SNS, SQS, StepFunction, Lambda Function, VPC, EBS, SDK/CLI, CloudWatch, EventBridge, RDS, Systems Manager, Secret Manager</li>
+        <li><strong>Azure Cloud Platform:</strong> Azure DevOps, Virtual Network, Network Security Group, Subnet,
+            Storage Account, Virtual Machine, Virtual Machine Monitoring, Virtual Machine Disk, Action Groups, Recovery
+            Services Vault, Data Collection Rule and SDK/CLI</li>
+        <li><strong>AWS Cloud Platform:</strong> EC2, S3, ECS, ECR, ELK, SSM, CloudFormation, CDK, SES, SNS, SQS,
+            StepFunction, Lambda Function, VPC, EBS, SDK/CLI, CloudWatch, EventBridge, RDS, Systems Manager, Secret
+            Manager</li>
         <li><strong>Google Cloud Platform:</strong> Compute Engine, Cloud Storage, Databases and SDK/CLI</li>
-        <li><strong>DevOps and Container Platform:</strong> Git, Docker, Docker Compose, Docker Swarm, Jenkins, GitHub Actions, Terraform CDK</li>
+        <li><strong>DevOps and Container Platform:</strong> Git, Docker, Docker Compose, Docker Swarm, Jenkins, GitHub
+            Actions, Terraform CDK</li>
         <li><strong>Linux Management:</strong> Bash/Shell script, Cron Expression, Logrotate, JQ, SSH, Rsync</li>
-        <li><strong>Programming Languages:</strong> Typescript, JavaScript, NodeJS, ReactJS, React Native, Python and Shell Script</li>
+        <li><strong>Programming Languages:</strong> Typescript, JavaScript, NodeJS, ReactJS, React Native, Python and
+            Shell Script</li>
         <li><strong>Infrastructure as Code (IaC):</strong> AWS CDK, Terraform CDK, Pulumi</li>
         <li><strong>Productivity:</strong> Jira, Wrike, Confluence, Microsoft Teams, Slack, Agile, ITIL</li>
     </ul>
@@ -346,7 +423,7 @@
         const themeToggleButton = document.getElementById('theme-toggle-btn');
 
         // Load theme from localStorage on page load
-        window.onload = function() {
+        window.onload = function () {
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'light') {
                 document.body.classList.add('light-mode');
@@ -358,7 +435,7 @@
         };
 
         // Back to Top Button Logic
-        window.onscroll = function() {
+        window.onscroll = function () {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 backToTopButton.style.display = 'block';
             } else {
@@ -366,7 +443,7 @@
             }
         };
 
-        backToTopButton.onclick = function() {
+        backToTopButton.onclick = function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
@@ -374,7 +451,7 @@
         };
 
         // Theme Toggle Logic
-        themeToggleButton.onclick = function() {
+        themeToggleButton.onclick = function () {
             document.body.classList.toggle('light-mode');
             if (document.body.classList.contains('light-mode')) {
                 themeToggleButton.textContent = 'Dark Mode';
@@ -386,4 +463,7 @@
         };
     </script>
 </body>
-</html></html>
+
+</html>
+
+</html>
