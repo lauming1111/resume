@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ming Lau Resume</title>
+    <title>Max Lau Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -195,6 +195,30 @@
             font-size: 16px;
         }
 
+        .badge-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            margin: 14px 0 6px;
+        }
+
+        .badge-embed {
+            width: 120px;
+            height: 120px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .badge-embed img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border: 0;
+            display: block;
+        }
+
 
         .action-bar {
             display: flex;
@@ -244,6 +268,12 @@
                 bottom: 12px;
                 right: 12px;
             }
+
+            .badge-embed,
+            .badge-embed img {
+                width: 96px;
+                height: 96px;
+            }
         }
     </style>
 </head>
@@ -254,20 +284,46 @@
     </div>
     <div class="action-bar action-bar-right">
         <a href="./about_me.html" id="about-me-btn" class="action-button">About Me</a>
-        <a href="./Ming Lau.pdf" class="action-button download-btn" download="Ming Lau.pdf">Download My Resume</a>
+        <a href="./Max Lau.pdf" class="action-button download-btn" download="Max Lau.pdf">Download My Resume</a>
         <a href="./CL.pdf" class="action-button download-btn" download="CL.pdf">Download My Cover Letter</a>
-        <a href="./Ming Lau CN Main.pdf" class="action-button download-btn" download="Ming Lau CN Main.pdf">Download My Resume (Chinese version)</a>
     </div>
 
-    <h1>Ming Lau</h1>
+    <h1>Max Lau</h1>
     <p class="contact-info">
-        <a href="mailto:minglau0315@gmail.com">minglau0315@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/ming-l-865014159/">LinkedIn</a> |
-        <!-- <a href="https://lauming1111.github.io/resume/">My Portfolio</a> |  -->
+        <a href="mailto:max-lau1998@outlook.com">max-lau1998@outlook.com</a> |
+        <a href="https://www.linkedin.com/in/max-lau-1998-ca/">LinkedIn</a> |
         437 818 8515
     </p>
     <div class="nav-links">
         <!-- Static About Me link removed -->
+    </div>
+
+    <div class="badge-strip" aria-label="Certifications and badges">
+        <div class="badge-embed">
+            <a href="https://www.credly.com/badges/0cd03dc7-f1fd-42a2-a9d1-9e501e5e8d6d">
+                <img src="./badges_imgs/aws_cp.png" alt="AWS Certified Cloud Practitioner badge">
+            </a>
+        </div>
+        <div class="badge-embed">
+            <a href="https://www.credly.com/badges/f784fb3b-4d00-4c80-8018-5316d1350f30">
+                <img src="./badges_imgs/aws_saa.png" alt="AWS Certified Solutions Architect - Associate badge">
+            </a>
+        </div>
+        <div class="badge-embed">
+            <a href="https://www.credly.com/badges/b8ab35c3-906b-450f-a286-e914d23ab136">
+                <img src="./badges_imgs/aws_developer.png" alt="AWS Certified Developer - Associate badge">
+            </a>
+        </div>
+        <div class="badge-embed">
+            <a href="https://www.credly.com/badges/4d13d803-db2b-4726-bb89-9f4edbb359df">
+                <img src="./badges_imgs/kcna.png" alt="Kubernetes and Cloud Native Associate badge">
+            </a>
+        </div>
+        <div class="badge-embed">
+            <a href="https://www.credly.com/badges/7dae82d1-c973-4561-8845-6c3bb1233956">
+                <img src="./badges_imgs/wes.png" alt="WES credential badge">
+            </a>
+        </div>
     </div>
 
     <h2>SUMMARY</h2>
@@ -413,6 +469,12 @@
             Shell Script</li>
         <li><strong>Infrastructure as Code (IaC):</strong> AWS CDK, Terraform CDK, Pulumi</li>
         <li><strong>Productivity:</strong> Jira, Wrike, Confluence, Microsoft Teams, Slack, Agile, ITIL</li>
+    </ul>
+
+    <h2>SIDE PROJECTS</h2>
+    <ul class="section-content">
+        <li><a href="https://lauming1111.github.io/work-to-buy/">Work Record Keeper</a> | <a
+                href="https://www.linkedin.com/company/work-record-keeper">Work Record Keeper LinkedIn</a></li>
     </ul>
 
     <!-- Buttons -->
